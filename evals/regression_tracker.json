@@ -1,0 +1,68 @@
+{
+  "baseline_run_id": "baseline-production",
+  "regression_threshold": 2.0,
+  "warning_threshold": 1.0,
+  "critical_benchmarks": ["MMLU", "GSM8K", "TruthfulQA"],
+  "comparisons": [
+    {
+      "run_id": "gemini-ultra-175b-v1",
+      "vs_baseline": {
+        "MMLU": {"delta": 2.9, "status": "improvement"},
+        "GSM8K": {"delta": 3.1, "status": "improvement"},
+        "HumanEval": {"delta": 4.5, "status": "improvement"},
+        "MATH": {"delta": 3.7, "status": "improvement"},
+        "HellaSwag": {"delta": 1.6, "status": "improvement"},
+        "TruthfulQA": {"delta": 2.1, "status": "improvement"},
+        "BBH": {"delta": 2.8, "status": "improvement"}
+      },
+      "overall_status": "pass",
+      "promotion_eligible": true
+    },
+    {
+      "run_id": "gemini-x-70b-v3",
+      "vs_baseline": {
+        "MMLU": {"delta": -2.3, "status": "regression"},
+        "GSM8K": {"delta": -1.5, "status": "warning"},
+        "HumanEval": {"delta": -2.9, "status": "regression"},
+        "MATH": {"delta": -2.9, "status": "regression"},
+        "HellaSwag": {"delta": -1.6, "status": "warning"},
+        "TruthfulQA": {"delta": -1.4, "status": "warning"},
+        "BBH": {"delta": -1.6, "status": "warning"}
+      },
+      "overall_status": "blocked",
+      "promotion_eligible": false,
+      "blocking_reasons": ["MMLU regression > 2.0pts", "MATH regression > 2.0pts"]
+    },
+    {
+      "run_id": "gemini-x-13b-v2",
+      "vs_baseline": {
+        "MMLU": {"delta": -14.6, "status": "critical_regression"},
+        "GSM8K": {"delta": -11.6, "status": "critical_regression"},
+        "HumanEval": {"delta": -16.0, "status": "critical_regression"},
+        "MATH": {"delta": -17.2, "status": "critical_regression"},
+        "HellaSwag": {"delta": -8.0, "status": "critical_regression"},
+        "TruthfulQA": {"delta": -8.5, "status": "critical_regression"},
+        "BBH": {"delta": -14.2, "status": "critical_regression"}
+      },
+      "overall_status": "blocked",
+      "promotion_eligible": false,
+      "blocking_reasons": ["Multiple critical regressions - smaller model expected"]
+    },
+    {
+      "run_id": "gemini-x-70b-safety-v2",
+      "vs_baseline": {
+        "MMLU": {"delta": -2.7, "status": "regression"},
+        "GSM8K": {"delta": -2.2, "status": "regression"},
+        "HumanEval": {"delta": -4.1, "status": "regression"},
+        "MATH": {"delta": -3.7, "status": "regression"},
+        "HellaSwag": {"delta": -1.9, "status": "warning"},
+        "TruthfulQA": {"delta": 4.4, "status": "improvement"},
+        "BBH": {"delta": -2.5, "status": "regression"}
+      },
+      "overall_status": "conditional_pass",
+      "promotion_eligible": true,
+      "notes": "Regressions expected for safety-tuned variant. TruthfulQA improvement significant. Safety metrics improved."
+    }
+  ],
+  "last_updated": "2026-01-20T06:30:00Z"
+}

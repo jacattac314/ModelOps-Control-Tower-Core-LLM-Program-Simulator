@@ -1,0 +1,74 @@
+[
+  {
+    "dataset_id": "webmix-v5",
+    "name": "WebMix v5",
+    "description": "Curated web corpus with quality filtering",
+    "total_tokens": "4.2T",
+    "sources": ["CommonCrawl", "Books", "Wikipedia", "ArXiv", "GitHub"],
+    "version": "5.0.0",
+    "created_at": "2026-01-10T00:00:00Z",
+    "quality_score": 8.7,
+    "deduplication_rate": 0.42,
+    "status": "ready"
+  },
+  {
+    "dataset_id": "code-mix-v3",
+    "name": "Code Mix v3",
+    "description": "Multi-language code corpus with documentation",
+    "total_tokens": "800B",
+    "sources": ["GitHub", "StackOverflow", "Technical Docs"],
+    "version": "3.2.1",
+    "created_at": "2026-01-12T00:00:00Z",
+    "quality_score": 9.1,
+    "deduplication_rate": 0.38,
+    "status": "ready"
+  },
+  {
+    "dataset_id": "synthetic-reasoning-v1",
+    "name": "Synthetic Reasoning v1",
+    "description": "Synthetic chain-of-thought and reasoning data",
+    "total_tokens": "200B",
+    "sources": ["Generated", "Curated Examples"],
+    "version": "1.0.0",
+    "created_at": "2026-01-18T00:00:00Z",
+    "quality_score": 8.9,
+    "deduplication_rate": 0.15,
+    "status": "ready"
+  },
+  {
+    "dataset_id": "unified-corpus-v8",
+    "name": "Unified Corpus v8",
+    "description": "Complete training corpus with all domains",
+    "total_tokens": "10T",
+    "sources": ["All Available Sources"],
+    "version": "8.0.0",
+    "created_at": "2025-12-20T00:00:00Z",
+    "quality_score": 8.5,
+    "deduplication_rate": 0.45,
+    "status": "ready"
+  },
+  {
+    "dataset_id": "webmix-v5-filtered",
+    "name": "WebMix v5 (Safety Filtered)",
+    "description": "WebMix v5 with enhanced safety filtering",
+    "total_tokens": "3.8T",
+    "sources": ["CommonCrawl", "Books", "Wikipedia", "ArXiv"],
+    "version": "5.0.1",
+    "created_at": "2026-01-14T00:00:00Z",
+    "quality_score": 9.0,
+    "deduplication_rate": 0.48,
+    "status": "ready"
+  },
+  {
+    "dataset_id": "distillation-corpus-v2",
+    "name": "Distillation Corpus v2",
+    "description": "Curated corpus for knowledge distillation",
+    "total_tokens": "500B",
+    "sources": ["Teacher Model Outputs", "High-Quality Web"],
+    "version": "2.0.0",
+    "created_at": "2026-01-15T00:00:00Z",
+    "quality_score": 9.3,
+    "deduplication_rate": 0.32,
+    "status": "ready"
+  }
+]

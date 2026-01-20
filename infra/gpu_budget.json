@@ -1,0 +1,82 @@
+{
+  "fiscal_year": 2026,
+  "current_quarter": "Q1",
+  "quarterly_budget_usd": 19500000,
+  "quarterly_spend_usd": 12600000,
+  "quarterly_utilization_pct": 64.6,
+  "days_remaining_in_quarter": 70,
+  "projected_quarter_end_spend_usd": 20160000,
+  "budget_variance_usd": -660000,
+  "variance_status": "over_budget",
+  "team_budgets": [
+    {
+      "team": "research-llm-team",
+      "quarterly_allocation_usd": 7800000,
+      "spent_to_date_usd": 5040000,
+      "utilization_pct": 64.6,
+      "projected_spend_usd": 8064000,
+      "status": "warning"
+    },
+    {
+      "team": "safety-alignment",
+      "quarterly_allocation_usd": 3900000,
+      "spent_to_date_usd": 2520000,
+      "utilization_pct": 64.6,
+      "projected_spend_usd": 4032000,
+      "status": "warning"
+    },
+    {
+      "team": "multimodal-research",
+      "quarterly_allocation_usd": 5850000,
+      "spent_to_date_usd": 3780000,
+      "utilization_pct": 64.6,
+      "projected_spend_usd": 6048000,
+      "status": "warning"
+    },
+    {
+      "team": "code-modeling",
+      "quarterly_allocation_usd": 975000,
+      "spent_to_date_usd": 630000,
+      "utilization_pct": 64.6,
+      "projected_spend_usd": 1008000,
+      "status": "warning"
+    },
+    {
+      "team": "efficiency-team",
+      "quarterly_allocation_usd": 390000,
+      "spent_to_date_usd": 252000,
+      "utilization_pct": 64.6,
+      "projected_spend_usd": 403200,
+      "status": "warning"
+    },
+    {
+      "team": "research-reasoning",
+      "quarterly_allocation_usd": 585000,
+      "spent_to_date_usd": 378000,
+      "utilization_pct": 64.6,
+      "projected_spend_usd": 604800,
+      "status": "warning"
+    }
+  ],
+  "cost_optimization_opportunities": [
+    {
+      "opportunity": "Spot instance migration for non-critical workloads",
+      "potential_savings_usd": 420000,
+      "effort": "medium",
+      "risk": "low"
+    },
+    {
+      "opportunity": "Checkpoint compression and storage optimization",
+      "potential_savings_usd": 180000,
+      "effort": "low",
+      "risk": "low"
+    },
+    {
+      "opportunity": "Experiment queue prioritization and scheduling optimization",
+      "potential_savings_usd": 340000,
+      "effort": "high",
+      "risk": "medium"
+    }
+  ],
+  "last_updated": "2026-01-20T08:00:00Z"
+}

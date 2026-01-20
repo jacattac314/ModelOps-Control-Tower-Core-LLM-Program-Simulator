@@ -1,0 +1,45 @@
+{
+  "cluster_name": "research-gpu-cluster-primary",
+  "total_gpus": 2048,
+  "gpu_type": "H100",
+  "allocated": 1820,
+  "available": 228,
+  "utilization_pct": 88.9,
+  "queue_depth": 3,
+  "queue_latency_min": 47,
+  "avg_wait_time_hours": 2.8,
+  "daily_cost_usd": 210000,
+  "monthly_budget_usd": 6500000,
+  "month_to_date_spend_usd": 4200000,
+  "budget_utilization_pct": 64.6,
+  "projected_month_end_spend_usd": 6720000,
+  "budget_status": "warning",
+  "gpu_allocation_by_team": {
+    "research-llm-team": 512,
+    "code-modeling": 64,
+    "safety-alignment": 256,
+    "efficiency-team": 16,
+    "research-reasoning": 32,
+    "multimodal-research": 384,
+    "infrastructure-testing": 128,
+    "reserved": 228,
+    "other": 200
+  },
+  "node_health": {
+    "healthy": 2032,
+    "degraded": 12,
+    "offline": 4
+  },
+  "network_stats": {
+    "avg_bandwidth_gbps": 1200,
+    "peak_bandwidth_gbps": 1850,
+    "utilization_pct": 64.9
+  },
+  "storage_stats": {
+    "total_petabytes": 50,
+    "used_petabytes": 38.7,
+    "available_petabytes": 11.3,
+    "utilization_pct": 77.4
+  },
+  "last_updated": "2026-01-20T08:00:00Z"
+}
