@@ -13,7 +13,7 @@ This agent demonstrates:
 
 import json
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import List, Dict, Any
 
@@ -33,7 +33,7 @@ class StallDetector:
         """Detect stalled experiments."""
         experiments = self.load_experiments()
         stalled = []
-        now = datetime.utcnow()
+        now = datetime.now(timezone.utc)
 
         for exp in experiments:
             # Check for explicitly stalled status
